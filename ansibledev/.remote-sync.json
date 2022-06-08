@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "transport": "scp",
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "127.0.0.1",
+  "port": "22",
+  "target": "/home/milclouduser",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "milclouduser",
+  "password": "milcloud2.0",
+  "watch": []
+}

@@ -1,0 +1,19 @@
+---
+  - name: Working with loop module
+    hosts: localhost
+    gather_facts: false
+    tasks:
+      - name: Iterate over hashes
+        debug:
+          msg:
+            - "Hello '{{ item.name }}', nice to meet you"
+            - "Your uid as per our record is '{{ item.uid }}'"
+      - name: add user
+        user:
+            name: '{{ item.name }}'
+            uid: '{{ item.uid }}'
+            state: present
+
+        loop:
+         - { name: 'deepak', uid: '1010' }
+         - { name: 'amit', uid: '1011' }

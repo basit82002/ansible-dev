@@ -1,0 +1,180 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate_rhel",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate_rhel/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate_rhel/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b4f8b6e085717e0c9df0af123b1f2ef57c1756b60cf7895b8b1ed0eb1938456b",
+   "format": 1
+  },
+  {
+   "name": "roles/validate_rhel/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate_rhel/tasks/validate-rhel.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c285ac9bc38d03f5339b134a9abd53cd40a146036e13f24452f813e92ac4105",
+   "format": 1
+  },
+  {
+   "name": "roles/validate_rhel/tasks/confirm-validation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "578e770bf2df2b412a8c807f755f02096ad11bb614dde3866642441d68902d5d",
+   "format": 1
+  },
+  {
+   "name": "roles/validate_rhel/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8ef1145cffbeb4fd329d816e2f7d0b541df6d288b67548015229ef06e0df6f16",
+   "format": 1
+  },
+  {
+   "name": "roles/validate_rhel/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/validate_rhel/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c3bbcc5102df0cfb26e083b5c73985cbb667fa8fb0140c4666809d39dbc5c069",
+   "format": 1
+  },
+  {
+   "name": "roles/setup_storage",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/setup_storage/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/setup_storage/tasks/configure-storage.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "72ce16e4e8dd0c324451264ec78c2b1a73799d0c4a768ed996ea12f2259f2a0d",
+   "format": 1
+  },
+  {
+   "name": "roles/setup_storage/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "da86376b17d1fbc1c99ca80516f0ed20dfcf4602b8e7748f5f4fa796d2b46718",
+   "format": 1
+  },
+  {
+   "name": "roles/setup_storage/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/setup_storage/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "06c41cf724fd00d832918170f34d219957181979897cef61c0978e6ba89e8782",
+   "format": 1
+  },
+  {
+   "name": "LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+   "format": 1
+  },
+  {
+   "name": "playbooks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/setup_rhel_for_satellite.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d0594db20b970e244374b1adb91bfb69562ff78bdb0bfba0e3f3ce218c5b235e",
+   "format": 1
+  },
+  {
+   "name": "playbooks/validate_rhel.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ddf43d4f053a4c40b90b90da625f1ea2d9a58ca913294c119e6eb9882fe95f5d",
+   "format": 1
+  },
+  {
+   "name": "playbooks/setup_storage.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf3c9cda57a6a7f6ae1d13b2abcfa9fd8d6740a0b317e9de6e8d569ca1b3ac05",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/storage.vars.yml.example",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2bd73ca653e7e76bc77bcde19f0ca49b0f9e670191223928d5d207d26b8a970a",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b717ae11c279016a598b038bbfd0e7f31cf79b9f2e98f3e18c4e4b9a8ca5eb2",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

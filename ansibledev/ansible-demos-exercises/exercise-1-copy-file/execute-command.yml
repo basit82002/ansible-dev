@@ -1,0 +1,35 @@
+-
+  name: Execute command in  remote servers
+  hosts: all
+  tasks:
+    - name: execute some command in remote servers
+      command: date
+      register: myout
+
+    - name: Print return information from the previous task
+      debug:
+       msg: "Today's date is : {{ myout.stdout }}"
+
+    - name: Get uptime information
+      ansible.builtin.shell: /usr/bin/uptime
+      register: result
+
+    - name: Print return information from the previous task
+      debug:
+        msg: "The system availabilty information is : {{ result.stdout }}"
+
+    # - name: Display resolv.conf contents
+    #   command: cat /etc/resolv.conf
+    #   register: result
+    #
+    # - name: Display the previous output in stdout
+    #   debug:
+    #     msg: "The /etc/resolv.conf information is:{{ result.stdout }}" 
+
+    - name: Display resolv.conf contents
+      command: cat resolv.conf chdir=/etc
+      register: result
+
+    - name: Display the previous output in stdout
+      debug:
+          msg: "The /etc/resolv.conf information is:{{ result.stdout }}"

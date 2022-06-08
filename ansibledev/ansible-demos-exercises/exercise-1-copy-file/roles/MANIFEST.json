@@ -1,0 +1,36 @@
+{
+ "collection_info": {
+  "namespace": "jjaswanson4",
+  "name": "setup_rhel_for_satellite",
+  "version": "1.0.1",
+  "authors": [
+   "Josh Swanson <jswanson@redhat.com>",
+   "Scott Danielson <sdaniels@redhat.com>",
+   "Rodrique Heron <rheron@redhat.com>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "rhel7",
+   "satellite6",
+   "setup_rhel_for_satellite"
+  ],
+  "description": "This collection validates and set up a RHEL host to run satellite 6",
+  "license": [
+   "GPL-2.0-or-later"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://github.com/jjaswanson4/setup_rhel_for_satellite",
+  "documentation": "https://github.com/jjaswanson4/setup_rhel_for_satellite/blob/master/README.md",
+  "homepage": "https://github.com/jjaswanson4/setup_rhel_for_satellite",
+  "issues": "https://github.com/jjaswanson4/setup_rhel_for_satellite/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "d33fd091b21e67e2b58cfe1eb9d76ca9f2707d55faf4e99035f2092e951dc634",
+  "format": 1
+ },
+ "format": 1
+}

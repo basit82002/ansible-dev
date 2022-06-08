@@ -1,0 +1,28 @@
+---
+ - name: Working with loop module
+   hosts: localhost
+   gather_facts: false
+   tasks:
+     - name: Echo the value
+       command: echo "{{ item }}"
+       loop:
+         - 1
+         - 2
+         - 3
+         - 4
+         - 5
+       register: loopresult
+
+     - name: Iterate over hashes
+       debug:
+         msg:
+           - "Hello '{{ item.fname }}', nice to meet you"
+           - "Your last name as per our record is '{{ item.lname }}'"
+           - "Your country of residence is '{{ item.location }}'"
+
+       loop:
+         - { fname: 'deepak', lname: 'prasad', location: 'India' }
+         - { fname: 'amit', lname: 'kumar', location: 'Argentina' }
+         - { fname: 'rahul', lname: 'sharma', location: 'Canada' }
+         - { fname: 'vivek', lname: 'mittal', location: 'Brazil' }
+         - { fname: 'anurag', lname: 'keshav', location: 'Japan' }

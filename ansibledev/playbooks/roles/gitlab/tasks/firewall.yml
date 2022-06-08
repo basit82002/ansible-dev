@@ -1,0 +1,27 @@
+---
+- name: Install the custom Gitlab firewalld service
+  copy:
+    dest: /etc/firewalld/services/gitlab.xml
+    mode: '0644'
+    content: |
+      <?xml version="1.0" encoding="utf-8"?>
+      <service>
+        <short>Gitlab</short>
+        <description>Gitlab service with separate registry. Installed by Ansible.</description>
+        <port protocol="tcp" port="80"/>
+        <port protocol="tcp" port="443"/>
+        <port protocol="tcp" port="5050"/>
+      </service>
+  register: install_firewall_service
+  notify:
+    - reload firewalld
+
+- name: Flush handlers
+  meta: flush_handlers
+
+- name: Allow the Gitlab firewalld service
+  ansible.posix.firewalld:
+    service: gitlab
+    permanent: true
+    immediate: true
+    state: enabled
