@@ -1,0 +1,2 @@
+#target1 ansible_host=192.168.1.186  ansible_user=ansibletarget
+target1 ansible_host=192.168.1.186  ansible_connection=ssh ansible_user=root ansible_ssh_pass=M@hveen09 nameserver_ip=8.8.8.8 snmp_port=160-161

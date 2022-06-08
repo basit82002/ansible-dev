@@ -1,0 +1,18 @@
+-
+    name: 'Update nameserver entry into resolv.conf file on localhost'
+    hosts: localhost
+    vars_files:
+      - vars.yml
+    vars:
+        model: 'BMW M3'
+        name: USA
+        position: 'Systems Engineer'
+
+
+    tasks:
+        -
+            command: 'echo "My car''s model is {{ car_model }}"'
+        -
+            command: 'echo "I live in the {{ country_name }}"'
+        -
+            command: 'echo "I work as a {{ title }}"'

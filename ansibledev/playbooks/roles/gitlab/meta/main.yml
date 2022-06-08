@@ -1,0 +1,20 @@
+---
+---
+dependencies:
+  - role: acquire-login
+  - role: common_firewalld
+    vars:
+      firewall_services:
+        - http
+        - https
+
+      firewall_custom_service:
+        gitlab:
+          name: Gitlab
+          ports:
+            - port: 80
+              protocol: tcp
+            - port: 443
+              protocol: tcp
+            - port: 5050
+              protocol: tcp

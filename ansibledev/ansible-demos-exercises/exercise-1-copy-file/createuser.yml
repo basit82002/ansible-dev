@@ -1,0 +1,18 @@
+-
+    name: 'create user '
+    hosts: all
+    tasks:
+      - user: name=adyan state=present
+        loop:
+          - adyan
+          - george
+
+      - user: name='{{ item.name }}' state=present uid='{{item.uid}}' group='{{item.group}}'
+        loop:
+          - name: adyan
+            uid: 1010
+            group: wheel
+
+          - name: george
+            uid: 1011
+            group: wheel

@@ -1,0 +1,6 @@
+-
+  name: Execute a script in target host
+  hosts: all
+  tasks:
+    - name: Execute a shell script
+      script: /tmp/install_script.sh
