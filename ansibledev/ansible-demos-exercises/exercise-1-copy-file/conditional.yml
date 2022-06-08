@@ -1,8 +1,0 @@
--
-    name: 'Execute a script on all web server nodes'
-    hosts: all
-    tasks:
-        -
-            service: 'name=httpd state=started'
-            # when: 'ansible_host=="server4.company.com"'
-            when: 'ansible_host=="192.168.1.186"'

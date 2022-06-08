@@ -1,9 +1,0 @@
---- # template example
-- hosts: localhost
-  gather_facts: no
-  become: yes
-  vars:
-    contents: "{{ lookup('file','/data/test.csv'}}"
-
-  tasks:
-    - debug: msg"the value of test.csv is {{contents}}"
